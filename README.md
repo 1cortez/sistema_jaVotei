@@ -50,9 +50,14 @@ Você pode acessar o script completo de criação das tabelas clicando no link a
 
 👉 Visualizar script.sql
 
+- Algoritmo de exemplo para gerar dados para popular o banco de dados (via Python + Faker).
+  <img width="755" height="386" alt="Screenshot_14" src="https://github.com/user-attachments/assets/176f9bc1-4aff-4a87-ba04-4b2634c1232f" />
+
+  
+
 - Criação e povoamento do banco de dados.
 - Consultas SQL (com agregações, junções e ordenações).
-- Script de exemplo para popular automaticamente os dados (via Python + Faker, opcional).
+
 
 
 ## 👨‍💻 Parte 3 – Aplicação Prática (Python + Tkinter)
