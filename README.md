@@ -46,7 +46,7 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 #### Modelo lógico no DBDesginer
   <img width="1624" height="898" alt="Screenshot_11" src="https://github.com/user-attachments/assets/1685e255-6728-4221-8a8f-e2662554f116" />
 
-#### 👉 script completo de criação das tabelas:
+#### 👉 Script completo de criação das tabelas:
 ```sql
 CREATE TABLE IF NOT EXISTS Usuario (
 	id_usuario serial NOT NULL UNIQUE,
@@ -131,6 +131,31 @@ for nome, email, senha in usuarios:
     print()
 ```
   
+#### Povoamento da tabela (usuario) :
+```sql
+INSERT INTO usuario (id_usuario, usuario, email, senha)
+VALUES
+(02, 'qmendonca', 'maria-fernanda39@example.net', '%44+iZs#'),
+(03, 'cauajesus', 'vitor-gabriel59@example.net', 'h)J71nSgf'),
+(04, 'portogael', 'usilveira@example.net', 'a@0WJa'),
+(05, 'zda-cruz', 'dmoura@example.com', 'm^64YkY'),
+(06, 'ayllamachado', 'pintomaria-laura@example.com', 'VG08PgUo$c'),
+(07, 'da-luzmaria-eduarda', 'ana-lauraborges@example.com', 'P+4Wr!'),
+(08, 'beatrizoliveira', 'riosbruna@example.org', 'e(1DQqUi1'),
+(09, 'oda-cunha', 'leticia87@example.com', '5dgSv&YV*&4'),
+(10, 'davi-lucca95', 'valentimnogueira@example.com', '8Nay5IOakm&i'),
+(11, 'raulda-paz', 'rmelo@example.org', '*Yy1EUeii'),
+(12, 'hcavalcante', 'kamillyfogaca@example.com', '5+7#qFpL^'),
+(13, 'joao-vitor91', 'casa-grandelunna@example.com', ')5$RaU'),
+(14, 'doliveira', 'montenegrojuliana@example.net', '_8Wbqi'),
+(15, 'britocaua', 'oliver53@example.com', ')+4rLdGUfjxV'),
+(16, 'baparecida', 'ravi-lucca96@example.com', 'bqhV0RxJ$R'),
+(17, 'augustoandrade', 'avieira@example.org', '_H(3Nfs'),
+(18, 'kcassiano', 'da-cunhagabriel@example.org', '@pVg3WHC0'),
+(19, 'henry33', 'noahporto@example.net', '+R0En2e&H&A'),
+(20, 'ncampos', 'maria-luiza91@example.net', '*4lTHiIl!'),
+(21, 'rioshenrique', 'luiz-otavioandrade@example.net', '&78%fSrn');
+```
 
 - Criação e povoamento do banco de dados.
 - Consultas SQL (com agregações, junções e ordenações).
