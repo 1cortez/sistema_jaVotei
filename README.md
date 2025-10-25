@@ -1,3 +1,5 @@
+## 📝 Introdução do projeto
+
 O projeto Sistema de Votação foi desenvolvido como parte da disciplina Banco de Dados do curso de Gestão de Dados da Universidade Federal do Piauí (UFPI).
 Seu objetivo é aplicar de forma prática os conceitos de modelagem relacional, implementação de bancos de dados e execução de consultas SQL utilizando o PostgreSQL.
 
