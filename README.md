@@ -47,6 +47,8 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
   <img width="1624" height="898" alt="Screenshot_11" src="https://github.com/user-attachments/assets/1685e255-6728-4221-8a8f-e2662554f116" />
 ## 🗄️ Script de Criação das Tabelas
 
+O script completo de criação das tabelas está disponível aqui.
+
 O script completo de criação das tabelas está disponível [aqui](./Sistema%20de%20Votação
 - Criação e povoamento do banco de dados.
 - Consultas SQL (com agregações, junções e ordenações).
