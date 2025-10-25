@@ -51,7 +51,23 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 
 #### Algoritmo para gerar dados para popular o banco de dados (via Python + Faker).
 
-  <img width="755" height="386" alt="Screenshot_14" src="https://github.com/user-attachments/assets/176f9bc1-4aff-4a87-ba04-4b2634c1232f" />
+`python`
+from faker import Faker
+import random
+
+fake = Faker('pt_BR')
+usuarios = []
+
+for _ in range(20):  
+    nome = fake.user_name()
+    email = fake.email()
+    senha = fake.password(length=random.randint(6, 12))
+    usuarios.append((nome, email, senha))
+
+for nome, email, senha in usuarios:
+    print(f'nome : {nome} , email : {email}, senha : {senha}', end=' ')
+    print()
+`
 
   
 
