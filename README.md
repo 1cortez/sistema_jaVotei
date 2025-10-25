@@ -49,9 +49,8 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 - Você pode acessar o script completo de criação das tabelas clicando no link abaixo:
 👉 Visualizar script.sql
 
-#### Algoritmo para gerar dados para popular o banco de dados (via Python + Faker).
-
-`python`
+#### 🐍Algoritmo para gerar dados para popular o banco de dados (via Python + Faker).
+```python
 from faker import Faker
 import random
 
@@ -67,8 +66,7 @@ for _ in range(20):
 for nome, email, senha in usuarios:
     print(f'nome : {nome} , email : {email}, senha : {senha}', end=' ')
     print()
-`
-
+```
   
 
 - Criação e povoamento do banco de dados.
