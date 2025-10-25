@@ -15,7 +15,7 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 
 ## 📘 Parte 1 – Modelo Lógico (DER)
 - Diagrama entidade-relacionamento com explicação detalhada.
-- <img width="757" height="494" alt="Screenshot_97" src="https://github.com/user-attachments/assets/f1f317b9-8e97-49d8-a564-2f0215198212" />
+ <img width="757" height="494" alt="Screenshot_97" src="https://github.com/user-attachments/assets/f1f317b9-8e97-49d8-a564-2f0215198212" />
 
 #### **Entidades e Atributos:**
 
