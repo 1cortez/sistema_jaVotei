@@ -10,3 +10,22 @@ Modelagem Lógica (DER) – elaboração do diagrama entidade-relacionamento e d
 Implementação em PostgreSQL – criação das tabelas, povoamento do banco e desenvolvimento das consultas SQL;
 
 Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gráfica funcional para demonstrar o funcionamento do sistema de votação na prática.
+
+## 📘 Parte 1 – Modelo Lógico (DER)
+- Diagrama entidade-relacionamento com explicação detalhada.
+- Representação das entidades, atributos e relacionamentos.
+
+## 🧮 Parte 2 – Implementação em PostgreSQL
+- Criação e povoamento do banco de dados.
+- Consultas SQL (com agregações, junções e ordenações).
+- Script de exemplo para popular automaticamente os dados (via Python + Faker, opcional).
+
+
+## 👨‍💻 Parte 3 – Aplicação Prática (Python + Tkinter)
+
+
+
+---
+**Autor:** Guilherme Francisco França Cortez  
+**Disciplina:** Banco de Dados  
+**Instituição:** UFPI  
