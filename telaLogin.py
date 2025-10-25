@@ -121,8 +121,6 @@ class TelaLogin(Funcs):
         else:
             messagebox.showwarning("Erro", "Usuário ou senha incorretos!")        
 
-
-    
     def abrir_cadastro(self):
         self.frame_1.destroy()  # Remove a tela de login
         Cadastro(self.root)     # Abre a tela de cadastro
@@ -201,10 +199,10 @@ class Votacao(Funcs):
         self.frame_3.place(relx=0.5, rely=0.5, anchor=CENTER) # y = altura, x = comprimento
     
     def botoes(self):
-        self.bt_criar = Button(self.frame_3, text='Criar Grupo', bg='#2761F5', font=('Arial', 12, 'bold'), fg='white')
+        self.bt_criar = Button(self.frame_3, text='Criar Grupo', bg='#2761F5', font=('Arial', 12, 'bold'), fg='white', command=self.abrir_criar_grupo)
         self.bt_criar.place(relx=0.5, rely=0.4, anchor='center', relheight=0.12, relwidth=0.3)
         
-        self.bt_entrar = Button(self.frame_3, text='Entrar em Grupo', bg='#2761F5', font=('Arial', 12, 'bold'), fg='white')
+        self.bt_entrar = Button(self.frame_3, text='Entrar em Grupo', bg='#2761F5', font=('Arial', 12, 'bold'), fg='white', command=self.abrir_entrar_grupo)
         self.bt_entrar.place(relx=0.5, rely=0.55, anchor='center', relheight=0.12, relwidth=0.3)
 
         self.bt_sair = Button(self.frame_3, text='Sair', font=('Arial', 12, 'bold'), command=self.abrir_login)
@@ -217,6 +215,125 @@ class Votacao(Funcs):
     def abrir_login(self):
         self.frame_3.destroy()  # Remove a tela de cadastro
         TelaLogin()     # Abre a tela de login
+    
+    def abrir_criar_grupo(self):
+        self.frame_3.destroy()
+        Criar_grupo(self.root)
+    
+    def abrir_entrar_grupo(self):
+        self.frame_3.destroy()
+        Entrar_grupo(self.root)
+    
+class Criar_grupo(Funcs):
+    def __init__(self, root):
+        self.root = root
+        self.tela_criar_grupo()
+        self.frames()
+        self.botoes()
+        
+    def tela_criar_grupo(self):
+        self.root.title('Criação de grupo')
+        self.root.configure(background='lightgray')
+        self.root.geometry('600x600')
+    
+    def frames(self):
+        self.frame_4 = Frame(self.root, bg='#E3E1E1', width=500, height=450, highlightbackground='#2761F5', highlightthickness=3)
+        self.frame_4.place(relx=0.5, rely=0.5, anchor=CENTER) # y = altura, x = comprimento
+    
+    def botoes(self):
+        self.bt_criar = Button(self.frame_4, text='Criar Grupo', bg='#2761F5', font=('Arial', 12, 'bold'), fg='white', command=self.abrir_votar_jogo)
+        self.bt_criar.place(relx=0.5, rely=0.6, anchor='center', relheight=0.12, relwidth=0.3)
+
+        # input para o botao criar
+        self.input_grupo = Entry(self.frame_4, highlightbackground='#2761F5', highlightthickness=1)
+        self.input_grupo.place(relx=0.5, rely=0.38, relheight=0.06, relwidth=0.6, anchor=CENTER)
+
+        # label 
+        self.lb_insira = Label(self.frame_4, text='Insira o nome do grupo : ', font=('Arial', 19, 'bold'), bg='#E3E1E1')
+        self.lb_insira.place(relx=0.5, rely=0.05, anchor=N)
+    
+    def abrir_votar_jogo(self):
+        messagebox.showinfo("Sucesso", "Grupo criado com sucesso!")
+        self.frame_4.destroy()
+        Votar_Jogo(self.root)
+    
+class Entrar_grupo(Funcs):
+    
+    def __init__(self, root):
+        self.root = root
+        self.janela()
+        self.frames()
+    
+    def janela(self):
+        self.root.title('Entrar em um grupo')
+        self.root.configure(background='lightgray')
+        self.root.geometry('600x600')
+    
+    def frames(self):
+        self.frame_5 = Frame(self.root, bg='#E3E1E1', width=500, height=450, highlightbackground='#2761F5', highlightthickness=3)
+        self.frame_5.place(relx=0.5, rely=0.5, anchor=CENTER)
+    
+    def abrir_votar_jogo(self):
+        messagebox.showinfo("Sucesso", "Entrada no grupo realizada com sucesso!")
+        self.frame_5.destroy()
+        Votar_Jogo(self.root)
+
+class Votar_Jogo(Funcs):
+    
+    def __init__(self, root):
+        self.root = root
+        self.janela()
+        self.frames()
+        self.botoes()
+    
+    def janela(self):
+        self.root.title('Votar em um jogo')
+        self.root.configure(background='lightgray')
+        self.root.geometry('600x600')
+    
+    def frames(self):
+        self.frame_6 = Frame(self.root, bg='#E3E1E1', width=500, height=450, highlightbackground='#2761F5', highlightthickness=3)
+        self.frame_6.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    def botoes(self):
+        self.lb_insira = Label(self.frame_6, text='Vote em um jogo : ', font=('Arial', 19, 'bold'), bg='#E3E1E1')
+        self.lb_insira.place(relx=0.5, rely=0.05, anchor=N)
+
+        self.bt_voto = Checkbutton(self.frame_6, text="FORTNITE", bg='#E3E1E1', font=('Arial', 9, 'bold'))
+        self.bt_voto.place(relx=0.5, rely=0.4, anchor=CENTER)
+        
+        self.bt_voto_1 = Checkbutton(self.frame_6, text="EAFC 25", bg='#E3E1E1', font=('Arial', 9, 'bold'))
+        self.bt_voto_1.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+        self.bt_voto_2 = Checkbutton(self.frame_6, text="COUNTER STRIKE 2", bg='#E3E1E1', font=('Arial', 9, 'bold'))
+        self.bt_voto_2.place(relx=0.5, rely=0.6, anchor=CENTER)
+
+class Ver_votos(Funcs):
+    
+    def __init__(self, root):
+        self.root = root
+        self.janela()
+        self.frames()
+    
+    def janela(self):
+        self.root.title('Votar em um jogo')
+        self.root.configure(background='lightgray')
+        self.root.geometry('600x600')
+    
+    def frames(self):
+        self.frame_7 = Frame(self.root, bg='#E3E1E1', width=500, height=450, highlightbackground='#2761F5', highlightthickness=3)
+        self.frame_7.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+        #label
+        self.lb_insira = Label(self.frame_7, text='Votos em tempo real : ', font=('Arial', 19, 'bold'), bg='#E3E1E1')
+        self.lb_insira.place(relx=0.5, rely=0.05, anchor=N)
+    
+    def botoes(self):
+        Checkbutton(self.frame_7, text="Opção 1", variable=self.opcao1).pack(anchor='w', padx=20)
+    
+
+
+
 
 TelaLogin()
 root.mainloop()
