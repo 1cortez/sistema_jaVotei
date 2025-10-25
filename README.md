@@ -43,13 +43,13 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 
 
 ## 🧮 Parte 2 – Modelo Lógico DBDesigner + Implementação em PostgreSQL
-- Modelo lógico no DBDesginer
+#### Modelo lógico no DBDesginer
   <img width="1624" height="898" alt="Screenshot_11" src="https://github.com/user-attachments/assets/1685e255-6728-4221-8a8f-e2662554f116" />
 
 - Você pode acessar o script completo de criação das tabelas clicando no link abaixo:
 👉 Visualizar script.sql
 
-- Algoritmo de exemplo para gerar dados para popular o banco de dados (via Python + Faker).
+#### Algoritmo para gerar dados para popular o banco de dados (via Python + Faker).
 
   <img width="755" height="386" alt="Screenshot_14" src="https://github.com/user-attachments/assets/176f9bc1-4aff-4a87-ba04-4b2634c1232f" />
 
