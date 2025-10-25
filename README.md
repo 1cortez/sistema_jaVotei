@@ -15,9 +15,14 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 
 ## 📘 Parte 1 – Modelo Lógico (DER)
 - Diagrama entidade-relacionamento com explicação detalhada.
+- <img width="757" height="494" alt="Screenshot_97" src="https://github.com/user-attachments/assets/f1f317b9-8e97-49d8-a564-2f0215198212" />
+  !Diagrama entidade-relacionamento (DER)
 - Representação das entidades, atributos e relacionamentos.
 
 ## 🧮 Parte 2 – Implementação em PostgreSQL
+
+
+
 - Criação e povoamento do banco de dados.
 - Consultas SQL (com agregações, junções e ordenações).
 - Script de exemplo para popular automaticamente os dados (via Python + Faker, opcional).
