@@ -13,7 +13,7 @@ Implementação em PostgreSQL – criação das tabelas, povoamento do banco e d
 
 Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gráfica funcional para demonstrar o funcionamento do sistema de votação na prática.
 
-## 📘 Parte 1 – Modelo Lógico (DER)
+## 📘 Parte 1 – Modelagem de banco de dados conceitual (DER)
 - Diagrama entidade-relacionamento com explicação detalhada.
  <img width="757" height="494" alt="Screenshot_97" src="https://github.com/user-attachments/assets/f1f317b9-8e97-49d8-a564-2f0215198212" />
 
@@ -42,9 +42,9 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 ---
 
 
-## 🧮 Parte 2 – Implementação em PostgreSQL
-
-
+## 🧮 Parte 2 – Modelo Lógico DBDesigner + Implementação em PostgreSQL
+- Modelo lógico no DBDesginer
+  <img width="1624" height="898" alt="Screenshot_11" src="https://github.com/user-attachments/assets/1685e255-6728-4221-8a8f-e2662554f116" />
 
 - Criação e povoamento do banco de dados.
 - Consultas SQL (com agregações, junções e ordenações).
