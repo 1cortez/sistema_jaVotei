@@ -16,8 +16,31 @@ Aplicação Prática (Python + Tkinter) – desenvolvimento de uma interface gr�
 ## 📘 Parte 1 – Modelo Lógico (DER)
 - Diagrama entidade-relacionamento com explicação detalhada.
 - <img width="757" height="494" alt="Screenshot_97" src="https://github.com/user-attachments/assets/f1f317b9-8e97-49d8-a564-2f0215198212" />
-  !Diagrama entidade-relacionamento (DER)
-- Representação das entidades, atributos e relacionamentos.
+
+#### **Entidades e Atributos:**
+
+- **Usuário**: Responsável pelo cadastro na plataforma, podendo criar ou participar de grupos.  
+  **Atributos**: `ID_Usuário`, `Nome`, `E-mail`, `Senha`.
+
+- **Grupo**: Criado por usuários e destinado à organização dos membros.  
+  **Atributos**: `ID_Grupo`, `Nome do Grupo`, `Descrição`.
+
+- **Jogo**: Representa os jogos cadastrados no sistema.  
+  **Atributos**: `ID_Jogo`, `Nome`, `Gênero`, `Plataforma`.
+
+- **Votação**: Processo em que os membros de um grupo escolhem, entre os jogos cadastrados, qual será selecionado para jogar.
+
+---
+
+### 🔗 **Relacionamentos:**
+
+- Um **Usuário** pode **criar vários Grupos** → (1:N).
+- Um **Usuário** pode **participar de vários Grupos**, e cada Grupo pode ter vários Usuários → (N:N).
+- Um **Grupo** realiza **uma única Votação** → (1:1).
+- Uma **Votação** permite escolher entre **vários Jogos** → (N:N).
+
+---
+
 
 ## 🧮 Parte 2 – Implementação em PostgreSQL
 
