@@ -162,7 +162,19 @@ VALUES
 
 
 
-## 👨‍💻 Parte 3 – Aplicação Prática (Python + Tkinter)
+## 👨‍💻 Parte 3 – Aplicação Prática (Python + Tkinter e SQLite3)
+
+  - Tela de login com validação de acesso :
+  <img width="641" height="681" alt="Screenshot_16" src="https://github.com/user-attachments/assets/54e1feea-3fc4-474c-b67e-f08ec249294a" />
+
+  - Tela de seleção entre criar um grupo e entrar em um :
+<img width="701" height="699" alt="Screenshot_17" src="https://github.com/user-attachments/assets/c745369e-41b5-4aef-9e35-2dcb54dc5568" />
+
+- Tela de votação de jogos :
+<img width="683" height="660" alt="Screenshot_18" src="https://github.com/user-attachments/assets/140f897e-75f4-488e-a372-6b38d06d3892" />
+
+* Tecnologias utilizadas : Python + Tkinter e SQLite3
+    
 
 
 
